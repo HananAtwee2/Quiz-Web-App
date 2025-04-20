@@ -14,4 +14,11 @@ function register() {
     const password = document.getElementById('register-password').value;
 
     const users = JSON.parse(localStorage.getItem('users')) || [];
-    
+
+    // Check if user already exists
+    const exists = users.some(user => user.email === email);
+    if (exists) {
+        alert('User already exists!');
+        return;
+    }
+}
