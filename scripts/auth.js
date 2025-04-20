@@ -25,3 +25,12 @@ function register() {
     localStorage.setItem('users', JSON.stringify(users));
     alert('Registration successful!');
 }
+// Login function
+function login() {
+    const email = document.getElementById('login-email').value;
+    const password = document.getElementById('login-password').value;
+  
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+  
+    const user = users.find(u => u.email === email && u.password === password);
+}
