@@ -6,3 +6,12 @@ document.getElementById('register-tab').addEventListener('click', () => {
     document.getElementById('Register-Form').style.display = 'block';
     document.getElementById('Login-Form').style.display = 'none';
   });
+
+  // Register function
+function register() {
+    const email = document.getElementById('register-email').value;
+    const username = document.getElementById('register-username').value;
+    const password = document.getElementById('register-password').value;
+
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    
