@@ -33,4 +33,15 @@ function login() {
     const users = JSON.parse(localStorage.getItem('users')) || [];
   
     const user = users.find(u => u.email === email && u.password === password);
+
+    if (!user) {
+        alert('Invalid credentials!');
+        return;
+    }
+    localStorage.setItem('currentUser', JSON.stringify(user));
+    if (email === 'admin@quiz.com' && password === 'admin123') {
+        window.location.href = 'dashboard.html'; // Redirect to admin dashboard
+    } else {
+        window.location.href = 'home.html'; // Redirect to home page for users
+        }
 }
