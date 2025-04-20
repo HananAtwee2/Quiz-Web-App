@@ -1,11 +1,14 @@
-document.getElementById('login-tab').addEventListener('click',()=> {
-    document.getElementById('Login-Form').style.display='block';
-    document.getElementById('Register-Form').style.display = 'none';
-})
-document.getElementById('register-tab').addEventListener('click', () => {
-    document.getElementById('Register-Form').style.display = 'block';
+document.getElementById('show-register').addEventListener('click', function (e) {
+    e.preventDefault();
     document.getElementById('Login-Form').style.display = 'none';
-  });
+    document.getElementById('Register-Form').style.display = 'block';
+});
+
+document.getElementById('show-login').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('Register-Form').style.display = 'none';
+    document.getElementById('Login-Form').style.display = 'block';
+});
 
   // Register function
 function register() {
@@ -45,3 +48,5 @@ function login() {
         window.location.href = 'home.html'; // Redirect to home page for users
         }
 }
+document.getElementById('login-btn').addEventListener('click', login);
+document.getElementById('register-btn').addEventListener('click', register);
