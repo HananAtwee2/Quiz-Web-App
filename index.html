@@ -12,26 +12,23 @@
     <body>
         <!-- class tomake it easy to style this block -->
         <div class="auth-wrapper">
-
-            <div class="tabs">
-                <button id="login-tab" class="active">Login</button>
-                <button id="register-tab">Register</button>
-              </div>
-
-              <div id="Login-Form" class="form-container">
+            
+            <div id="Login-Form" class="form-container">
                 <h2>Login</h2>
                 <input type="email" id="login-email" placeholder="Email" required>
                 <input type="password" id="login-password" placeholder="Password" required>
-                <button onclick="login()">Login</button>
-              </div>
+                <button id="login-btn">Login</button>
+                <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+            </div>
 
-              <div id="Register-Form" class="register-container">
+            <div id="Register-Form" class="form-container" style="display: none;">
                 <h2>Register</h2>
                 <input type="email" id="register-email" placeholder="Email" required>
                 <input type="username" id="register-username" placeholder="Username" required>
                 <input type="password" id="register-password" placeholder="Password" required>
-                <button onclick="register()">Register</button>
-              </div>
+                <button id="register-btn">Register</button>
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
         </div>
         <script src="auth.js"></script>
     </body>

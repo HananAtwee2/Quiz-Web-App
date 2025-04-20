@@ -12,7 +12,7 @@ body{
     height: 100vh;
 }
 .auth-wrapper{
-    background-color: aliceblue;
+    background-color:aliceblue;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -38,8 +38,8 @@ button:hover {
 
 /* Style for active tab */
 button.active {
-    background-color:lightblue;
-    color:lightsteelblue;
+    background-color:blue;
+    color:antiquewhite;
 }
 
 /* Form container for Login and Register forms */
@@ -55,7 +55,7 @@ input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #a7aaff;
+    border: 1px solid #0e1297;
     border-radius: 5px;
 }
 
@@ -70,9 +70,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-button:hover {
-    background-color: #45a049;
-}
+
 /* Style for Register form */
 .register-container {
     display: none;
