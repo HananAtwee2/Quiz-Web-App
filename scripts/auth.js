@@ -21,4 +21,7 @@ function register() {
         alert('User already exists!');
         return;
     }
+    users.push({ email, username, password, scores: [] });
+    localStorage.setItem('users', JSON.stringify(users));
+    alert('Registration successful!');
 }
