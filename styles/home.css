@@ -18,3 +18,20 @@ h1, h2 {
     color:blueviolet;
 }
 
+#quiz-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#quiz-list li {
+    padding: 10px;
+    background-color:azure;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+#quiz-list li:hover {
+    background-color:darkorchid
+}
+
