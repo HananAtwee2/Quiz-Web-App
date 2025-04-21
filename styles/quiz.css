@@ -61,6 +61,9 @@ body {
     border-color:aliceblue;
 }
 
+.quiz-option-label input[type="radio"] {
+    margin-right: 10px;
+}
 
 .submit-btn {
     padding: 12px 30px;

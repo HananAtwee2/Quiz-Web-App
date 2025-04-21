@@ -110,6 +110,8 @@ quizQuestions.forEach((quiz, index) => {
     // Add options for each question
     quiz.options.forEach((option, optionIndex) => {
         const label = document.createElement("label");
+        label.classList.add("quiz-option-label");
+
         const input = document.createElement("input");
         input.type = "radio";
         input.name = `question-${index}`;
