@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quizzat</title>
-        <link rel="stylesheet" href="styles\auth.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzat</title>
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
 
-    </head>
-
-    <body>
-        <div class="page-container">
-            <h1 class="app-title">Quizzat</h1>
-            <!-- class to make it easy to style this block -->
-            <div class="auth-wrapper">
-            
-                <div id="Login-Form" class="form-container">
-                    <h2>Login</h2>
-                    <input type="email" id="login-email" placeholder="Email" required>
-                    <input type="password" id="login-password" placeholder="Password" required>
-                    <button id="login-btn">Login</button>
-                    <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
-                </div>
-
-                <div id="Register-Form" class="form-container" style="display: none;">
-                    <h2>Register</h2>
-                    <input type="email" id="register-email" placeholder="Email" required>
-                    <input type="username" id="register-username" placeholder="Username" required>
-                    <input type="password" id="register-password" placeholder="Password" required>
-                    <button id="register-btn">Register</button>
-                    <p>Already have an account? <a href="#" id="show-login">Login</a></p>
-                </div>
-            
+<body>
+    <div class="page-container">
+        <h1 class="app-title">Quizzat</h1>
+        <!-- class to make it easy to style this block -->
+        <div class="auth-wrapper">
+            <!-- Login Form -->
+            <div id="Login-Form" class="form-container">
+                <h2>Login</h2>
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button id="login-btn">Login</button>
+                <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
             </div>
 
+            <!-- Register Form -->
+            <div id="Register-Form" class="form-container" style="display: none;">
+                <h2>Register</h2>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="username" id="register-username" placeholder="Username" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button id="register-btn">Register</button>
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
         </div>
-        <script src="auth.js"></script>
-    </body>
+    </div>
+    <script src="scripts/auth.js"></script>
+</body>
+
 </html>

@@ -10,6 +10,9 @@ document.getElementById('show-login').addEventListener('click', function (e) {
     document.getElementById('Login-Form').style.display = 'block';
 });
 
+console.log("auth.js is working");
+
+
 // Register function
 function register() {
     const email = document.getElementById('register-email').value;
@@ -27,14 +30,18 @@ function register() {
     users.push({ email, username, password, scores: [] });
     localStorage.setItem('users', JSON.stringify(users));
     alert('Registration successful!');
+    // After registration, go back to login page
+    document.getElementById('Register-Form').style.display = 'none';
+    document.getElementById('Login-Form').style.display = 'block';
 }
+
 // Login function
 function login() {
     const email = document.getElementById('login-email').value;
     const password = document.getElementById('login-password').value;
-  
+
     const users = JSON.parse(localStorage.getItem('users')) || [];
-  
+
     const user = users.find(u => u.email === email && u.password === password);
 
     if (!user) {
@@ -42,12 +49,12 @@ function login() {
         return;
     }
     localStorage.setItem('currentUser', JSON.stringify(user));
-    if (email === 'admin@quiz.com' && password === 'admin123') {
-        window.location.href = 'dashboard.html'; // Redirect to admin dashboard
-    } else {
-        window.location.href = 'home.html'; // Redirect to home page for users
-        }
+
+    // Redirect to home page or dashboard
+    window.location.href = 'home.html';  // Or 'dashboard.html' for admins
 }
-// Event listeners for Login and Register buttons
+
+// Add event listeners for the buttons
 document.getElementById('login-btn').addEventListener('click', login);
 document.getElementById('register-btn').addEventListener('click', register);
+

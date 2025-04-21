@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    padding: 40px;
+}
+
+.home-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: darkviolet;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quiz-item {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-item:hover {
+    background-color: #e0e0ff;
+}
+
