@@ -54,7 +54,13 @@ body {
 
 /* Hover effect for options */
 .quiz-option:hover {
-    background-color: #e2e2e2;
+    background-color:aliceblue;
+    transform: scale(1.05);
+}
+
+.quiz-option.selected {
+    background-color:lightskyblue;
+    border-color:blue;
 }
 
 
