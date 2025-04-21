@@ -74,7 +74,9 @@ const quizzes= [
     }
 ];
 
-localStorage.setItem("quizzes",JSON.stringify(quizzes));
+if (!localStorage.getItem("quizzes")) {
+    localStorage.setItem("quizzes", JSON.stringify(quizzes));
+}
 
 const selectedQuiz = JSON.parse(localStorage.getItem("selectedQuiz"));
 

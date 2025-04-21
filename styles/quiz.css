@@ -24,43 +24,41 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-.quiz-question {
-    font-size: 1.6rem; /* Larger font size for questions */
+.question {
+    font-size: 1.4rem; /* Larger font size for questions */
     font-weight: bold;
     margin: 20px 0; /* Adds spacing between the question and options */
-    color: #333; /* Dark color for better readability */
-    text-align: left; /* Align text to the left */
+    color:indigo; /* Dark color for better readability */
+    text-align:left; /* Align text to the left */
     padding: 10px;
 }
 
 .quiz-options {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Adds space between each option */
-    align-items: flex-start;
+    gap: 12px; /* Adds space between each option */
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.quiz-option {
-    padding: 12px 20px;
-    margin: 5px 0;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
+.quiz-option-label {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
     border-radius: 8px;
+    padding: 10px 15px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    font-size: 1.1rem; /* Slightly larger text */
-    text-align: left;
+    transition: background-color 0.3s;
 }
 
 /* Hover effect for options */
-.quiz-option:hover {
-    background-color:aliceblue;
-    transform: scale(1.05);
+.quiz-option-label:hover {
+    background-color: #e0e0e0;
 }
 
 .quiz-option.selected {
-    background-color:lightskyblue;
-    border-color:blue;
+    background-color:blue;
+    border-color:aliceblue;
 }
 
 
