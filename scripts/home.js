@@ -14,3 +14,15 @@ const quizzes = JSON.parse(localStorage.getItem("quizzes")) || [
 
 //save to localstorage if not saved yet
 localStorage.setItem("quizzes", JSON.stringify(quizzes));
+
+//display quizzes
+const quizList = document.getElementById("quiz-list");
+quizzes.forEach((quiz) => {
+  const li = document.createElement("li");
+  li.textContent = quiz.title;
+  li.addEventListener("click", () => {
+    localStorage.setItem("selectedQuiz", JSON.stringify(quiz));
+    window.location.href = "quiz.html"; // move to quiz page
+  });
+  quizList.appendChild(li);
+});
