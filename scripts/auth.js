@@ -10,7 +10,7 @@ document.getElementById('show-login').addEventListener('click', function (e) {
     document.getElementById('Login-Form').style.display = 'block';
 });
 
-  // Register function
+// Register function
 function register() {
     const email = document.getElementById('register-email').value;
     const username = document.getElementById('register-username').value;
@@ -48,5 +48,6 @@ function login() {
         window.location.href = 'home.html'; // Redirect to home page for users
         }
 }
+// Event listeners for Login and Register buttons
 document.getElementById('login-btn').addEventListener('click', login);
 document.getElementById('register-btn').addEventListener('click', register);
