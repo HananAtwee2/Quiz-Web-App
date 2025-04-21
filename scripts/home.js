@@ -17,6 +17,7 @@ localStorage.setItem("quizzes", JSON.stringify(quizzes));
 
 //display quizzes
 const quizList = document.getElementById("quiz-list");
+//loop every quiz
 quizzes.forEach((quiz) => {
   const li = document.createElement("li");
   li.textContent = quiz.title;
